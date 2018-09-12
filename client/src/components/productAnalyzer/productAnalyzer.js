@@ -39,11 +39,11 @@ class ProductAnalyzer extends Component {
                         <img className="check-product-logo" src={Lipstick} />
                     </div>
                     <div className="check-product-description">
-                        Copy and paste comma separated ingredient lists here for a safety/gentle breakdown of a product.
+                        Grab a personal care item, find the ingredients list online, and copy/paste the comma separated list here.
                     </div>
                     <form className="check-product-form-field">
                         <div className="check-product-input-container">
-                            <textarea autoFocus onChange={this.handleInput.bind(this)} className="check-product-input-field" type="text" placeholder="copy and paste ingredients here..."></textarea>
+                            <textarea autoFocus onChange={this.handleInput.bind(this)} className="check-product-input-field" type="text" placeholder="ex. Titanium Dioxide, Water, Ethylhexyl Palmitate, Glycerin, Octyldodecanol, Silica, Pentylene Glycol"></textarea>
                         </div>
                         {this.state.error ? <div className="ingredients-error">Please enter ingredients to query.</div> : null}
                         <div className="check-product-button-container">
