@@ -15,7 +15,7 @@ class AboutTheSite extends Component {
             <section>
                 <Header history={this.props.history} />
                 <div className="about-the-site-container">
-                    <a target="blank" href="https://github.com/aliawilkinson/c318_pureproduct">
+                    <a target="blank" href="https://github.com/aliawilkinson/pure_product">
                         <div className="button button-git github-info-about-site">
                             <img className="git-logo" src={github} />
                             <p>Github</p>
