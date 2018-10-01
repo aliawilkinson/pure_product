@@ -12,6 +12,7 @@ body {
     margin: 0;
     font-family: Avenir, Helvetica, sans-serif;
     color: darkgrey;
+    overflow-x: hidden;
 }
 
 h1 {
