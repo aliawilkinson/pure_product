@@ -8,11 +8,11 @@ body {
     position: relative;
     box-sizing: border-box;
     min-height: 100%;
-    width: 100%;
-    margin: 0;
+    width: 100vw;
+    overflow-x: hidden;
+    margin: auto;
     font-family: Avenir, Helvetica, sans-serif;
     color: darkgrey;
-    overflow-x: hidden;
 }
 
 h1 {
