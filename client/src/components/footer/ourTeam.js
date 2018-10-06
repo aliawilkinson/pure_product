@@ -73,7 +73,7 @@ class OurTeam extends Component {
                         </div>
                     </div>
                     <div className="person-profile hanh">
-                        <a href="/our_team">
+                        <a href="/our_team" target="blank">
                             <div className="pic-cont">
                                 <img className='ourTeamPic' src={Hanh} align="middle" />
                                 <img className='ourTeamPic derp' src={hanhDerp} align="middle" />
@@ -94,7 +94,7 @@ class OurTeam extends Component {
                         </a>
                     </div>
                     <div className="person-profile omer">
-                        <a href="http://omerfuterman.com" target="blank">
+                        <a href="/our_team" target="blank">
                             <div className="pic-cont">
                                 <img className='ourTeamPic' src={Omer} align="middle" />
                                 <img className='ourTeamPic derp' src={omerDerp} align="middle" />
