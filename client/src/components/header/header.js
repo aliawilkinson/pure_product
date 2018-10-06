@@ -224,7 +224,7 @@ class Header extends Component {
                 </div>
                 <form className={formClass} autoComplete="off">
                     <div className="autocomplete">
-                        <input value={this.state.input} autoFocus={searchToggle} onChange={this.handleInput.bind(this)} onKeyDown={this.handleKeyDown.bind(this)} type="text" placeholder="Search for products or ingredients..." id="search-bar-style-show" className={this.state.searchBarStyle} />
+                        <input value={this.state.input} autoFocus={searchToggle} onChange={this.handleInput.bind(this)} onKeyDown={this.handleKeyDown.bind(this)} type="text" placeholder="Search for products..." id="search-bar-style-show" className={this.state.searchBarStyle} />
                     </div>
                     <button onClick={this.handleSubmit.bind(this)} className={this.state.buttonStyle}>Search</button>
                     <AutoComplete fillOutAutoComplete={this.fillOutAutoComplete} suggestions={autoComplete} currentInput={input} />
