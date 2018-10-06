@@ -30,7 +30,7 @@ class OurTeam extends Component {
                     <h1 className="our-team-title">Our Team</h1>
                     <div className="two-person-cont">
                         <div className="person-profile alia">
-                            <a href="http://aliawilkinson.com" target="blank">
+                            <a target="blank" href="http://aliawilkinson.com">
                                 <div className="pic-cont">
                                     <img className='ourTeamPic' src={Alia} align="middle" />
                                     <img className='ourTeamPic derp' src={aliaDerp} align="middle" />
@@ -86,7 +86,7 @@ class OurTeam extends Component {
                                 <img className="but-icon" src={portfolio} />
                             </button>
                         </a>
-                        <a href="https://github.com/hanhpham327" target="blank">
+                        <a target="blank" href="https://github.com/hanhpham327">
                             <button className="git-but">
                                 <h6>github</h6>
                                 <img className="but-icon" src={github} />
