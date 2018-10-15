@@ -16,8 +16,18 @@ class ProductAnalyzerResult extends Component {
             }
         }
     }
+
+    sanitizeInputData(string) {
+        string = string.toLowerCase();
+        string = string.split(',');
+        var newQuery = string.map(ingredient => ingredient.trim());
+        string = newQuery.join();
+        return string;
+    }
+
     async componentDidMount() {
         let query = decodeURIComponent(this.props.match.params.search);
+        query = this.sanitizeInputData(query);
         await axios.post(`/server/api_get_ingredient_by_name_multiple.php`, { query }).then(response => {
             this.setState({
                 data: response.data
@@ -28,6 +38,7 @@ class ProductAnalyzerResult extends Component {
     async componentWillReceiveProps(nextProps) {
         if (this.props.match.params.search !== nextProps.match.params.search) {
             let query = decodeURIComponent(nextProps.match.params.search);
+            query = this.sanitizeInputData(query);
             await axios.post(`/server/api_get_ingredient_by_name_multiple.php`, { query }).then(response => {
                 this.setState({
                     data: response.data
