@@ -39,7 +39,7 @@ class ProductAnalyzer extends Component {
                         <img className="check-product-logo" src={Lipstick} />
                     </div>
                     <div className="check-product-description">
-                        Grab a personal care item, find the ingredients list online, and copy/paste the comma separated list here.
+                        Grab a personal care item, find the ingredients listed online, and copy/paste the comma separated list here.
                     </div>
                     <form className="check-product-form-field">
                         <div className="check-product-input-container">
